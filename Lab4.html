@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 2s 1s infinite;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                transform: rotate(0deg);
+                border-radius: 0px
+            }
+
+            to {
+                left: 200px;
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
+            }
+        }
+
+        .one {
+            background: yellow;
+            border: 2px solid black;
+
+            width: 22%;
+            height: auto;
+            transition: all 0s ease-in-out;
+        }
+
+        .one:hover {
+            transform: rotate(180deg);
+        }
+
+        .gallary {
+            width: 100%;
+            border: 1px solid yellowgreen;
+        }
+
+        .gallary img {
+            width: 21%;
+            padding: 5px;
+            border: 2px solid greenyellow;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .gallary img:hover {
+            filter: grayscale(50%);
+
+        }
+
+        @media screen and (max-width: 300px) {
+            .gallary img {
+                width: 95%;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 800px) {
+            .gallary img {
+                width: 40%;
+            }
+        }
+
+        .first {
+            filter: grayscale(100%);
+        }
+
+        .second {
+            filter: blur(3px);
+        }
+
+        .third {
+            filter: opacity(30px);
+        }
+
+        .last {
+            float: left;
+            width: 50%;
+        }
+
+        .last1 {
+            float: left;
+            width: 50%;
+            text-shadow: 5px palevioletred;
+        }
+
+        .last1 h3 {
+            font-size: 39px;
+            color: #afa7a7;
+            text-shadow: 4px 2px blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Question-01</h2>
+
+    <div class="one">This is is no one who loves pain itself, who seeks after it and wants to have it , simply because
+        it is pain... </div>
+    <h2>Question-02</h2>
+    <div class="square"></div>
+
+    <h2>Question-03</h2>
+    <div>
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="first" width="220px" height="200px">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="second" width="220px" height="200px">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="third" width="220px" height="200px">
+    </div>
+
+    <h2>Question-04</h2>
+    <div class="gallary">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 1">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 2">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 3">
+        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 4">
+    </div>
+    <h2>Question-05</h2>
+
+    <div class="last1">
+        <h3>Text Shadow effect!</h3>
+    </div>
+
+    <div class="last">
+        <figure>
+            <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" width="220px" height="180px">
+            <figcaption>Dell Laptop New Series Image</figcaption>
+        </figure>
+    </div>
+
+</body>
+
+</html>
