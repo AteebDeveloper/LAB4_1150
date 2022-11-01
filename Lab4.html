@@ -41,36 +41,6 @@
             transform: rotate(180deg);
         }
 
-        .gallary {
-            width: 100%;
-            border: 1px solid yellowgreen;
-        }
-
-        .gallary img {
-            width: 21%;
-            padding: 5px;
-            border: 2px solid greenyellow;
-            border-radius: 10px;
-            margin: 5px;
-        }
-
-        .gallary img:hover {
-            filter: grayscale(50%);
-
-        }
-
-        @media screen and (max-width: 300px) {
-            .gallary img {
-                width: 95%;
-            }
-        }
-
-        @media screen and (min-width: 300px) and (max-width: 800px) {
-            .gallary img {
-                width: 40%;
-            }
-        }
-
         .first {
             filter: grayscale(100%);
         }
@@ -96,8 +66,74 @@
 
         .last1 h3 {
             font-size: 39px;
-            color: #afa7a7;
+            color: #f7f1f1;
             text-shadow: 4px 2px blue;
+        }
+
+
+        figcaption {
+            color: rgb(0, 0, 0);
+            padding: 2px;
+            text-align: center;
+            background-color: #fcfcfc;
+            margin-top: -20px;
+            padding-right: 15px;
+            padding-top: 20px;
+            padding-bottom :20px ;
+        }
+
+        figure {
+            padding: 4px;
+            margin: auto;
+            float: left;
+        }
+
+        .gallary img {
+            width: 21%;
+            
+        }
+
+        .gallary img:hover {
+            filter: grayscale(50%);
+
+        }
+
+        @media screen and (max-width: 300px) {
+
+            .gallary img {
+                width: 95%;
+            }
+        }
+
+        @media screen and (min-width: 301px) and (max-width: 800px) {
+
+            .gallary img {
+                width: 40%;
+            }
+        }
+
+        .shadow div {
+            float: left;
+            padding-left: 5px;
+
+
+        }
+
+        .shadow figure {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        .shadow img {
+            box-shadow: 2px 2px 4px #000000;
+            width: 400px;
+            height: 250px;
+
+        }
+
+        .shadow h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
         }
     </style>
 </head>
@@ -112,29 +148,41 @@
 
     <h2>Question-03</h2>
     <div>
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="first" width="220px" height="200px">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="second" width="220px" height="200px">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" class="third" width="220px" height="200px">
+        <img src="forest22.jpg" alt="image1" class="first" width="220px" height="200px">
+        <img src="forest.jpg" alt="image1" class="second" width="220px" height="200px">
+        <img src="forest.jpg" alt="image1" class="third" width="220px" height="200px">
     </div>
 
     <h2>Question-04</h2>
     <div class="gallary">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 1">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 2">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 3">
-        <img src="dell-1o5MZblCP50-unsplash.jpg" alt="image 4">
-    </div>
-    <h2>Question-05</h2>
-
-    <div class="last1">
-        <h3>Text Shadow effect!</h3>
-    </div>
-
-    <div class="last">
         <figure>
-            <img src="dell-1o5MZblCP50-unsplash.jpg" alt="" width="220px" height="180px">
-            <figcaption>Dell Laptop New Series Image</figcaption>
+            <img src="forest.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Add a description of the image here</figcaption>
         </figure>
+        <figure>
+            <img src="forest.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Add a description of the image here</figcaption>
+        </figure>
+        <figure>
+            <img src="forest.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Add a description of the image here</figcaption>
+        </figure>
+        <figure>
+            <img src="forest.jpg" alt="Trulli" style="width:100%">
+            <figcaption>Add a description of the image here</figcaption>
+        </figure>
+    </div>
+    <h2 > <br>Question#05</h2>
+    <div class="shadow">
+        <div>
+            <h1>Text Shadow effects</h1>
+        </div>
+        <div>
+            <figure>
+                <img src="forest.jpg" alt="Trulli" style="width:100%">
+                <figcaption>Add a description of the image here</figcaption>
+            </figure>
+        </div>
     </div>
 
 </body>
